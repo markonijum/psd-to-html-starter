@@ -1,6 +1,8 @@
-# 🏄 TotallyStatical site generator
+# 🏄 Front-end-web starter based on TotallyStatical site generator
 
-A barebone static site generator / rapid prototyping tool leveraging the awesome powers of Gulp and Webpack for all the heavy lifting.
+https://github.com/aderaaij/totallystatical
+
+This is extended version of TotallyStatical site generatot github project.
 
 ## Requirements:
 
@@ -151,70 +153,3 @@ Sets a global `isWatching` variable to `true`. Use to execute certain tasks, fun
 
 ## 💾 Server
 Start an express server on `localhost:5000` from the build folder. Convinient for checking out your production site
-
-## 🕷️🕸️ Bugs and to-do's
-
-* configure 'reving' of assets in a foolproof way
-* Add a build task without any revisioning / cache busting.
-* Create a data task: https://github.com/aderaaij/totallystatical/issues/6
-* Fix linking in a completely foolproof way: https://github.com/aderaaij/totallystatical/issues/4
-
-## 🚨 Changelog
-
-### v2.4.0
-**22/09/2017**
-* ⚒ Switched the `babel-preset-2015`, etc. for `babel-preset-env` which makes it way easier to compile for specific browsers. See https://github.com/babel/babel-preset-env
-* ⚒ Added presets to the webpack `UglifyJsPlugin`. Now removes `console.log` calls and comments (might have removed comments before, I'm not sure)
-* ⚒ Removed the 'standalone scripts' task, as it was weird running scripts through two different compilers. This should be done with webpack instead. Webpack doesn't support multiple outputs out of the box, but luckily there's a way around this: https://stackoverflow.com/a/45278943/4474075. Easy to configure in the `gulpfile.js/config/scripts.js` file. 
-* ⚒ Removed unused packages
-* ⚒ Cleaned up the gulpfile tasks and config files
-
-### v2.3.2
-**10/09/2017**
-* ⚒ Add `gulp-plumber` to template task to ensure watch task doesn't hang on error. 
-
-### v2.3.1
-**10/09/2017**
-* ⚒ Fix assetpath in background images for paths without `url()`. 
-
-### v2.3.0
-**09/09/2017**
-* ⚒ Fix problem with errorHandler notifyer (switched `..args` for `callback` and `arguments`) in `errorHandler.js`
-* 🐵 Monkey patched the replacement of images assets in css files. `../img/` will be replaced by `../img/assets/`, the cachebusted version will be added and `../img/assets/` will be turned back to `../img/` again.
-* 🚀 Update all packages to the latest versions
-* 🛁 Clean up of the gulpfile.js, now even more consistently coded and linted
-
-
-### v2.2.0
-**24/07/2017**
-* 🚀 Update all packages to the latest versions
-* 🛁 Clean up of the gulpfile.js, now consistently coded and linted
-* ⚒ Fix problem with new inline pug variables
-
-### v2.1.0
-**02/07/2017**
-* Updated all packages to the latest versions, including Susy 3.0 and WebPack 3.0
-
-### v2.0.1
-**11/10/2016**
-* Temporarily added the optional Dependencies from `gulp-imagemin` to the `package.json` to meet dependencies for [Yarn package manager](https://github.com/yarnpkg/yarn/)
-
-### v2.0.0
-**05/10/2016**
-Bumped the version to 2.0 as I did some major updates on the plugins/components
-* Updated Babel 5 to Babel 6, reconfigured Webpack config
-* Updated Jade(deprecated) to Pug
-* Updated Node dependencies
-* Removed Bower package manager and dependencies
-* Added Susy, Normalize-SCSS and Breakpoint-Sass as Node modules
-
-### v1.1.0
-**24/01/2016**
-* Replaced `gulp-minify-css` with `gulp-cssnano`
-* Added a `gulp deploy:ftp` and `gulp deploy:sftp` task
-
-## Credits
-Much credit goes out to the [gulp-starter repo](https://github.com/vigetlabs/gulp-starter) from Viget Labs(https://github.com/vigetlabs/).
-
-## Licensing
-Copyright (c) 2015 - 2016 Arden de Raaij. Licensed under the [MIT license(MIT)](https://opensource.org/licenses/MIT)
