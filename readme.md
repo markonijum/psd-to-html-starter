@@ -2,7 +2,7 @@
 
 https://github.com/aderaaij/totallystatical
 
-This is extended version of TotallyStatical site generatot github project.
+This is extended version of TotallyStatical site generator github project.
 
 ## Requirements:
 
