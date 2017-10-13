@@ -70,6 +70,8 @@
     "gulp-replace": "^0.6.1",
     "gulp.spritesmith": "^6.5.1",
     "jquery": "^3.2.1",
+    "lazysizes": "^4.0.0-rc4",
+    "picturefill": "^3.0.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   }
