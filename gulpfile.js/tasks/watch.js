@@ -10,6 +10,7 @@ const watchTask = () => {
     // plugins.watch(templates.source, () => { gulp.start('pug:watch'); });
     plugins.watch(html.source, () => { gulp.start('html:watch'); });
     plugins.watch(styles.base, () => { gulp.start('styles'); });
+    plugins.watch(styles.base, () => { gulp.start('modernizr'); });
     plugins.watch(images.source, () => { gulp.start('images'); });
     plugins.watch(svgSprite.source, () => { gulp.start('svg:sprite'); });
 };

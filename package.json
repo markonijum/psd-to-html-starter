@@ -66,6 +66,7 @@
   "dependencies": {
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
+    "gulp-modernizr": "^1.0.0-alpha",
     "gulp-plumber": "^1.1.0",
     "gulp-replace": "^0.6.1",
     "gulp.spritesmith": "^6.5.1",
