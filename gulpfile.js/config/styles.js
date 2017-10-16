@@ -8,6 +8,7 @@ module.exports = {
     settings: {
         outputStyle: 'nested',
         includePaths: [
+            './node_modules/',
             './node_modules/normalize-scss/sass/',
             './node_modules/susy/sass/',
             './node_modules/breakpoint-sass/stylesheets/',
